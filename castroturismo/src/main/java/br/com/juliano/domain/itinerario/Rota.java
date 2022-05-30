@@ -1,4 +1,4 @@
-package br.com.juliano.domain.etinerario;
+package br.com.juliano.domain.itinerario;
 
 import java.io.Serializable;
 
@@ -21,18 +21,23 @@ public class Rota implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	// Primary Key
 	private Integer id;
 
+	// Chave Estrangeira ou FK
 	private Rodoviaria origem;
 
+	// FK
 	private Rodoviaria destino;
 
 	private Double quilometragem;
 
 	private Double precoPassagem;
 
+	// FK
 	private Onibus onibus;
 
+	// FK
 	private Motorista motorista;
 
 	/**

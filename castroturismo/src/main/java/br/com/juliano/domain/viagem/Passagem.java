@@ -2,7 +2,7 @@ package br.com.juliano.domain.viagem;
 
 import java.io.Serializable;
 
-import br.com.juliano.domain.etinerario.Rota;
+import br.com.juliano.domain.itinerario.Rota;
 import br.com.juliano.domain.pessoal.Passageiro;
 
 /**

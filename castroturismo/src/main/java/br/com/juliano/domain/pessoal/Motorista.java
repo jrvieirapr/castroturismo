@@ -1,6 +1,9 @@
 package br.com.juliano.domain.pessoal;
 
 import java.io.Serializable;
+import java.util.List;
+
+import br.com.juliano.domain.itinerario.Rota;
 
 /**
  * Classe que recebe os dados de Motorista.
@@ -10,6 +13,7 @@ import java.io.Serializable;
  * @since 1.0.0
  *
  */
+
 public class Motorista extends Funcionario implements Serializable {
 
 	/**
@@ -22,6 +26,8 @@ public class Motorista extends Funcionario implements Serializable {
 	private String categoriaCNH;
 
 	private Boolean ear;
+
+	private List<Rota> rotas;
 
 	/**
 	 * 

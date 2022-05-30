@@ -4,24 +4,25 @@ import java.io.Serializable;
 
 /**
  * Classe que recebe os dados de pais.
+ * 
  * @author Juliano Roque Vieira
  * @version 1.0.0
  * @since 1.0.0
  *
  */
 public class Pais implements Serializable {
-	
+
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
-	
+
 	private String nome;
 
 	/**
 	 * Metodo Construtor da Classe Pais
 	 */
 	public Pais() {
-		
+
 	}
 
 	/**
@@ -51,7 +52,7 @@ public class Pais implements Serializable {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -81,7 +82,11 @@ public class Pais implements Serializable {
 		} else if (!nome.equals(other.nome))
 			return false;
 		return true;
-	}	
-	
+	}
+
+	@Override
+	public String toString() {
+		return String.format("Pais [id=%s, nome=%s]", id, nome);
+	}
 
 }

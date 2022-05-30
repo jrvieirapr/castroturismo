@@ -1,8 +1,10 @@
 package br.com.juliano.domain.local;
 
 import java.io.Serializable;
+
 /**
  * Classe que recebe os dados de Estado.
+ * 
  * @author Juliano Roque Vieira
  * @version 1.0.0
  * @since 1.0.0
@@ -11,18 +13,18 @@ import java.io.Serializable;
 public class Estado implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private Integer id;
-	
+
 	private String nome;
-	
+
 	private Pais pais;
 
 	/**
 	 * 
 	 */
 	public Estado() {
-		super();		
+		super();
 	}
 
 	/**
@@ -103,7 +105,10 @@ public class Estado implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return String.format("Estado [id=%s, nome=%s, pais=%s]", id, nome, pais);
+	}
 
 }

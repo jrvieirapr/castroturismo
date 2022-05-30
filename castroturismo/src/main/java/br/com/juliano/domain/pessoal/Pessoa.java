@@ -12,6 +12,7 @@ import br.com.juliano.domain.local.Cidade;
  * @since 1.0.0
  *
  */
+
 public abstract class Pessoa implements Serializable {
 
 	/**
